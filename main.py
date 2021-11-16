@@ -8,11 +8,23 @@ def calculation(number1, number2, calculation_type):
     return result
 
 
+def main():
+    calculation_type = user_query("What kind of calculation do you want to do? (+, -, *, /): ")
+    print("Calculation type " + calculation_type)
+    number1 = user_query("Please enter the first number: ")
+    number2 = user_query("Please enter the second number: ")
+    print(calculation(number1, number2, calculation_type))
+
+
 print("Hello and welcome to the calculator")
+main()
 
-calculation_type = user_query("What kind of calculation do you want to do? (+, -, *, /): ")
-print("Calculation type " + calculation_type)
-number1 = user_query("Please enter the first number: ")
-number2 = user_query("Please enter the second number: ")
+count = 1
+while count < 2:
+    abort_decision = input("Do you want to continue calculating [c] or quit the program [q]? (")
+    if abort_decision == "c":
+        main()
+    else:
+        count += 1
 
-print(calculation(number1, number2, calculation_type))
+print("The calculator is shut down!")
