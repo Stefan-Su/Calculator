@@ -2,7 +2,7 @@ Iteration 1:
 Implement all basic arithmetic operations (+, -, *, /)
 
 Iteration 2:
-Create control structures. If the user makes an unwanted entry, an error message is displayed. So that the program does not crash
+The program should run in an endless loop. Only when the user wants to end the program with "q" will it end.
 
 Iteration 3:
-The program should run in an endless loop. Only when the user wants to end the program with "q" will it end.
+Create control structures. If the user makes an unwanted entry, an error message is displayed. So that the program does not crash
